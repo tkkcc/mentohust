@@ -12,17 +12,19 @@
 
 - 斐讯k2
 - 两个校园网账号
-### 1. k2刷支持多拨的pandorabox（不会去论坛QQ群） 
+### 1. k2刷支持多拨的固件如pandorabox 
 
    ![ScreenClip(7).png](https://github.com/tkkcc/mentohust/blob/master/include/ScreenClip(7).png?raw=true)
 
-### 2. 使用winscp上传至bin目录
+### 2. 使用winscp上传mentohust至bin目录
 
    ![ScreenClip(7).png](https://github.com/tkkcc/mentohust/blob/master/include/ScreenClidp.png?raw=true)
 
+有些固件重启清目录，不会搞；有些固件bin不能放文件，放其他目录也可以
+
 ### 3. 多拨
 
-   路由器web管理界面设置**虚拟wan**
+   路由器web管理界面设置`虚拟wan`
 
    ![ScreenClip(7).png](https://github.com/tkkcc/mentohust/blob/master/include/ScreenClip.png?raw=true)
 
@@ -50,7 +52,7 @@
    chmod 000 /etc/mentohust.conf
    ```
 
-直接运行看看有哪些网卡
+直接运行看看有哪些网卡，记录网卡名
 
    ```shell
     [root@PandoraBox_D141:/root]#mentohust
@@ -134,7 +136,7 @@
    /bin/sh: dhclient: not found
    >> 操作结束。
    ** 本机MAC:	00:7b:9e:bb:00:21
-   ** 使用IP:	172.17.22.171
+   ** 使用IP:	172.17.12.171
    ** 子网掩码:	255.255.255.0
    >> 寻找服务器...
    V4 type: 0
@@ -169,7 +171,7 @@
    进入后台运行模式，使用参数-k可退出认证。
    ```
 
-这时看能不能上网，看`负载均衡` macvlan1要绿，ok才继续
+这时要能上网才继续，这时的`负载均衡` macvlan1也会绿
 
    ![ScreenClip(7).png](https://github.com/tkkcc/mentohust/blob/master/include/before.png?raw=true)
 
@@ -181,7 +183,7 @@
 
 上第二个 不使用-b1先看看，网卡用不同的 如macvlan2
    ```shell
-   [root@PandoraBox_D141:/root]#mentohust -u333333333 -p4444  -a1 -d1 -nmacvlan1
+   [root@PandoraBox_D141:/root]#mentohust -u333333333 -p4444  -a1 -d1 -nmacvlan2
 
    欢迎使用MentoHUST	版本: 0.3.1
    Copyright (C) 2009-2010 HustMoon Studio
@@ -189,7 +191,7 @@
    Bug report to http://code.google.com/p/mentohust/issues/list
 
    ** 用户名:	3333333333
-   ** 网卡: 	macvlan1
+   ** 网卡: 	macvlan2
    ** 认证超时:	8秒
    ** 心跳间隔:	30秒
    ** 失败等待:	15秒
@@ -197,7 +199,7 @@
    ** 组播地址:	锐捷
    ** DHCP方式:	二次认证
    ** DHCP脚本:	dhclient/n** 本机MAC:	00:7b:9e:bb:00:21
-   ** 使用IP:	172.17.22.171
+   ** 使用IP:	172.16.12.171
    ** 子网掩码:	255.255.255.0
    ** 认证参数已成功保存到/etc/mentohust.conf.
    >> 寻找服务器...
@@ -244,6 +246,8 @@
 
 流量走的平均说明成功了。
 
+
+
 ### 5. 其他
 - 前台运行退出用 mentohust -k，但对于pid文件被删掉的进程要用ps查看进程pid再kill掉
 
@@ -255,18 +259,21 @@
    [root@PandoraBox_D141:/root]#kill 14093
    ```
 
-- **防火墙设置**不要瞎改，
+- **防火墙设置**不要瞎改，默认就好
 
 - 目录下有k2的mentohust，来自某博主（忘了），支持v4，其他来自恩山无线论坛和qq群
 
 - 新加坡do用aira2拖回本地对比
 
   单号：
-
   ![ScreenClip(7).png](https://github.com/tkkcc/mentohust/blob/master/include/ScreenClip(8).png?raw=true)
 
   双号：
-
   ![ScreenClip(7).png](https://github.com/tkkcc/mentohust/blob/master/include/ScreenClip(3).png?raw=true)
 
+- 可惜mentohust会占用*-test，所以还得舍友牺牲才能搞
+
+- 别人几年前就会了
+
+   ![ScreenClip(7).png](https://github.com/tkkcc/mentohust/blob/master/include/213.png?raw=true)
 
