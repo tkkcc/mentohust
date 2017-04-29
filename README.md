@@ -266,14 +266,18 @@
 - 新加坡do用aira2拖回本地对比
 
   单号：
+
   ![ScreenClip(7).png](https://github.com/tkkcc/mentohust/blob/master/include/ScreenClip(8).png?raw=true)
 
   双号：
+
   ![ScreenClip(7).png](https://github.com/tkkcc/mentohust/blob/master/include/ScreenClip(3).png?raw=true)
 
 - 可惜mentohust会占用*-test，所以还得舍友牺牲才能搞
 
-- 别人几年前就会了
+- 老版pandora较新版或许更稳定，如16-10-23，以上数据都来自17-3-18，只是因为顺手试试罢了
 
-   ![ScreenClip(7).png](https://github.com/tkkcc/mentohust/blob/master/include/213.png?raw=true)
+- 别人几年前就会了，恩山多大神
+
+   ![ScreenClip(7).png](https://github.com/tkkcc/mentohust/blob/master/include/213.jpg?raw=true)
 
