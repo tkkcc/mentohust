@@ -155,6 +155,8 @@
 
 能上网则看两个能不能跑，按ctrl+c退出
 
+先上一个，用后台运行
+
    ```shell
    #先上一个，用后台运行，-b1 ，也可以开两个终端来试
 
@@ -171,7 +173,7 @@
    进入后台运行模式，使用参数-k可退出认证。
    ```
 
-这时要能上网才继续，这时的`负载均衡` macvlan1也会绿
+能上网则继续，这时的`负载均衡` macvlan1也会绿
 
    ![ScreenClip(7).png](https://github.com/tkkcc/mentohust/blob/master/include/before.png?raw=true)
 
@@ -273,11 +275,19 @@
 
   ![ScreenClip(7).png](https://github.com/tkkcc/mentohust/blob/master/include/ScreenClip(3).png?raw=true)
 
-- 可惜mentohust会占用*-test，所以还得舍友牺牲才能搞
+- mentohust会占用*-test，所以还得舍友牺牲才能搞
 
-- 老版pandora较新版或许更稳定，如16-10-23，以上数据都来自17-3-18，只是因为顺手试试罢了
+- 写在开机脚本里
+   ```shell
+   mentohust -u1141010106 -p123456  -a1 -d1 -neth0.2 -b1
+   rm /var/run/mentohust.pid -f
+   sleep 30s
+   mentohust -u1151222143 -pau87ddde  -a1 -d1 -nmacvlan1 -b1
+   # mentohust -u1160670531 -p120534711  -a1 -d1 -nmacvlan2 -b1
+   # mentohust -u1170340333 -p35374e3  -a1 -d1 -nmacvlan1 -b1
+   ```
 
-- 别人几年前就会了，恩山多大神
+- 恩山多大神
 
    ![ScreenClip(7).png](https://github.com/tkkcc/mentohust/blob/master/include/213.jpg?raw=true)
 
