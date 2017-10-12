@@ -1,5 +1,5 @@
 # 锐捷多拨
-
+[blog](https://tkkcc.github.io/2017/09/05/mentohust/)
 ## 原由：
 
 某高校采用锐捷认证，限速明显。
