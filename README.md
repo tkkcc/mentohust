@@ -1,4 +1,5 @@
 # 锐捷多拨
+
 破解限速的一种实现
 
 路由器mentohust多进程多号/单号双拨认证
@@ -10,7 +11,9 @@
 
 ### 1. 路由器刷支持多拨的固件如pandorabox
 
-   ![ScreenClip(7).png](https://github.com/tkkcc/mentohust/blob/master/include/ScreenClip%287%29.png?raw=true) 
+  [恩山更新贴](http://www.right.com.cn/forum/thread-197786-1-1.html)
+
+![ScreenClip(7).png](https://github.com/tkkcc/mentohust/blob/master/include/ScreenClip%287%29.png?raw=true) 
 
 ### 2. 上传mentohust
 
@@ -276,5 +279,4 @@ scp /F:/desktop/vps/k2/mentohust pandora:/bin
 
   ![ScreenClip(7).png](https://github.com/tkkcc/mentohust/blob/master/include/213.jpg?raw=true)
 
-  
 
